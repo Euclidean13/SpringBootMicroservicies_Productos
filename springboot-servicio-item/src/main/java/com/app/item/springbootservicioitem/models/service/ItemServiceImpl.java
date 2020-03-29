@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Service
+@Service("serviceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 
     @Autowired
