@@ -35,10 +35,17 @@ public class ProductoController {
     }
 
     @GetMapping("/ver/{id}")
-    public Producto detalle(@PathVariable Long id) {
+    public Producto detalle(@PathVariable Long id) throws Exception {
         Producto producto = productoService.findById(id);
         // producto.setPort(Integer.parseInt(Objects.requireNonNull(env.getProperty("local.server.port"))));
         producto.setPort(port);
+
+        // Forced exception in order to test Hystix. Check that metodo alternativo is called in item
+        // boolean ok = false;
+        // if (ok == false) {
+        //     throw new Exception("No se pudo cargar el producto");
+        // }
+
         return producto;
     }
 }
