@@ -25,4 +25,17 @@ public class ProductoServiceI implements IProductoService {
     public Producto findById(Long id) {
         return productoDao.findById(id).orElse(null);
     }
+
+    @Override
+    @Transactional
+    public Producto save(Producto producto) {
+        // Note that save can also updates the table entry if the id already exists
+        return productoDao.save(producto);
+    }
+
+    @Override
+    @Transactional
+    public void deleteById(Long id) {
+        productoDao.deleteById(id);
+    }
 }
