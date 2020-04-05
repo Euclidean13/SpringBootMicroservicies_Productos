@@ -1,6 +1,6 @@
 package com.app.item.springbootservicioitem.clientes;
 
-import com.app.item.springbootservicioitem.models.Producto;
+import com.app.commons.springbootserviciocommons.models.entity.Producto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

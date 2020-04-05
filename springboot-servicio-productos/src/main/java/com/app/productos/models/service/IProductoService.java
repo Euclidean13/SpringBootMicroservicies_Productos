@@ -1,6 +1,7 @@
 package com.app.productos.models.service;
 
-import com.app.productos.models.entity.Producto;
+
+import com.app.commons.springbootserviciocommons.models.entity.Producto;
 
 import java.util.List;
 

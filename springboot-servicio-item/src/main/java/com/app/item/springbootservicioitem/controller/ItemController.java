@@ -1,7 +1,7 @@
 package com.app.item.springbootservicioitem.controller;
 
+import com.app.commons.springbootserviciocommons.models.entity.Producto;
 import com.app.item.springbootservicioitem.models.Item;
-import com.app.item.springbootservicioitem.models.Producto;
 import com.app.item.springbootservicioitem.models.service.ItemService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
