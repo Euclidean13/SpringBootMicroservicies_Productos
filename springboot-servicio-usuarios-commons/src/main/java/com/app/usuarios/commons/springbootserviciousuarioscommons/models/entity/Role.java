@@ -1,4 +1,4 @@
-package com.app.usuarios.springbootserviciousuarios.models.entity;
+package com.app.usuarios.commons.springbootserviciousuarioscommons.models.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
