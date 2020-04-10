@@ -13,7 +13,7 @@ public interface UsuarioDao extends PagingAndSortingRepository<Usuario, Long> {
 
     // For personalizing the url and the parameters
     @RestResource(path = "buscar-username")
-    public Usuario findByUsername(@Param("nombre") String username);
+    public Usuario findByUsername(@Param("username") String username);
 
     // If we want to find by more than one attribute just add And + Attribute_Name
     // public Usuario findByUsernameAndEmail(String username, String email);
